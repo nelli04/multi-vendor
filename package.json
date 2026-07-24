@@ -2,20 +2,27 @@
   "name": "multi-vendor",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "format": "prettier --write src",
-    "lint": "eslint src --ext .jsx,.js,.tsx,.ts  --no-error-on-unmatched-pattern --fix && stylelint --fix src/{,/}.{scss,css} --allow-empty-input"
+    "lint": "eslint src --ext .jsx,.js,.tsx,.ts  --no-error-on-unmatched-pattern --fix && stylelint --fix src/{,/}.{scss,css} --allow-empty-input",
+    "generate:types": "payload generate:types"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
+    "@payloadcms/db-mongodb": "^3.85.2",
+    "@payloadcms/next": "^3.85.2",
+    "@payloadcms/richtext-lexical": "^3.85.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "graphql": "^16.8.1",
     "lucide-react": "^1.23.0",
     "next": "16.2.10",
     "next-themes": "^0.4.6",
+    "payload": "^3.85.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "shadcn": "^4.13.0",
